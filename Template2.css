@@ -1,0 +1,110 @@
+.top{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 8px 16px;
+    background-color: black;
+}
+
+#cardtop a{
+    text-decoration: none;
+    padding: 12px 24px;
+    display: inline-block; 
+    color: white;
+    width: 24%;
+    text-align: center;
+}
+#cardtop a:hover{
+    background-color: #ccc;
+    color: black;
+}
+.menu-img{
+    
+        
+        min-height: 530px;
+        background-image: url('images/coffeehouse.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+  
+}
+.relative{
+    position: relative;
+}
+.filter{
+    filter: grayscale(50%);
+}
+.bottomleft{
+    bottom: 0;
+    left:0;
+    position:absolute;
+    margin: 16px 24px;
+
+   
+}
+.tag1{
+    color: white;
+    background-color:black ;
+    padding: 4px 8px;
+}
+.bottomright{
+    bottom: 0;
+    right:0;
+    margin: 12px 24px;
+    padding: 2px;
+    position:absolute;
+    color: white;
+}
+.center{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);
+    line-height: 1.5;
+    color:white;
+}
+.tag3{
+    font-size: 90px;
+}
+.content{
+   
+}
+.about-container{ /*le contenu de about est contenu dans 50% de l'affichage*/
+    width: 45%; 
+    margin: auto;
+}
+.about-container h4{ /*Centrez et decalez*/
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 64px 0;
+    font-size: 15px;
+
+}
+.about-container span{
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    display: inline-block;
+}
+.about-container p{
+   line-height: 1.5;
+   font-size: 18px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    }
+#page{
+    background-color: #fdf5e6!important;
+    filter: grayscale(75%);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{font-family: "Inconsolata", sans-serif;}
