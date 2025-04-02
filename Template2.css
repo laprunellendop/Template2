@@ -73,8 +73,8 @@
    
 }
 .about-container{ /*le contenu de about est contenu dans 50% de l'affichage*/
-    width: 45%; 
-    margin: auto;
+    max-width:45%; 
+    margin-left: auto; margin-right: auto;
 }
 .about-container h4{ /*Centrez et decalez*/
     text-align: center;
@@ -83,7 +83,7 @@
     font-size: 15px;
 
 }
-.about-container span{
+#title-about{
     background-color: black;
     color: white;
     padding: 4px 8px;
@@ -108,3 +108,98 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 body{font-family: "Inconsolata", sans-serif;}
+#citation{
+    border-left: 4px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #f1f1f1;
+}
+#citation p{
+    font-style: italic;
+}
+#img-about{
+    padding: 16px 0;
+}
+.menu-container{
+    max-width:45%;
+    margin-left: auto; margin-right: auto;
+}
+.menu-container h4{
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 64px 0;
+    font-size: 15px;
+}
+#menu-title{
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    display: inline-block; 
+}
+.where-container{
+    max-width:45%;
+    margin-left: auto; margin-right: auto;
+}
+.where-container h4{
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 64px 0;
+    font-size: 15px;
+}
+.where-container p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+.where-container img{
+    padding: 16px 0;
+}
+#title-where{
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    display: inline-block; 
+}
+#word{
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    display: inline;
+}
+input[type=text],input[type=datetime-local]{
+border: 1px solid #ccc;
+padding: 21px 8px;
+width: 100%;
+margin: 8px 0;
+font-size: 15px;
+}
+input[type=submit]{
+    cursor: pointer;
+    padding: 12px 16px;
+    margin: 8px 0;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+input[type=submit]:hover{
+    background-color: #ccc;
+    color: black;
+}
+footer{
+    padding: 64px;
+    background-color:#f1f1f1;
+    text-align: center;
+    margin-top: 24px;
+}
+footer a{
+    color: black;
+}
+footer a:hover{
+    color: green;
+}
+@media only screen and (max-width:600px){
+    .bottomleft{
+        display: none;
+    }
+}
