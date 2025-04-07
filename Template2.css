@@ -6,15 +6,25 @@
     padding: 8px 16px;
     background-color: black;
 }
+#cardtop::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 #cardtop a{
     text-decoration: none;
     padding: 12px 24px;
-    display: inline-block; 
+    display: block; 
+    float: left;
     color: white;
-    width: 24%;
+    width: 25%;
     text-align: center;
+   
 }
+
+    
+    
 #cardtop a:hover{
     background-color: #ccc;
     color: black;
@@ -70,10 +80,10 @@
     font-size: 90px;
 }
 .content{
-   
+   padding: 0 16px;
 }
 .about-container{ /*le contenu de about est contenu dans 50% de l'affichage*/
-    max-width:45%; 
+    max-width:700px; 
     margin-left: auto; margin-right: auto;
 }
 .about-container h4{ /*Centrez et decalez*/
@@ -98,6 +108,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
+    margin: 10px 0;
     }
 #page{
     background-color: #fdf5e6!important;
@@ -121,7 +132,7 @@ body{font-family: "Inconsolata", sans-serif;}
     padding: 16px 0;
 }
 .menu-container{
-    max-width:45%;
+    max-width:700px; 
     margin-left: auto; margin-right: auto;
 }
 .menu-container h4{
@@ -136,8 +147,40 @@ body{font-family: "Inconsolata", sans-serif;}
     padding: 4px 8px;
     display: inline-block; 
 }
+.button-menu{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    text-align: center;
+    margin-bottom: 1px;
+   
+}
+.button-menu a:hover{
+    background-color: #616161 !important;
+}
+.button-item{
+    float: left;
+    width: 50%;
+    padding: 8px;
+    background-color: #fdf5e6!important;
+    text-decoration: none;
+}
+.button-menu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.text-menu{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fdf5e6!important;
+    padding: 32px 16px;
+    margin-bottom:24px ;
+}
+.text-menu p{
+color: #757575;
+padding: 8px 0;
+}
+
 .where-container{
-    max-width:45%;
+    max-width:700px; 
     margin-left: auto; margin-right: auto;
 }
 .where-container h4{
@@ -201,5 +244,14 @@ footer a:hover{
 @media only screen and (max-width:600px){
     .bottomleft{
         display: none;
+    }
+    #cardtop a{
+        width: 25%;
+    }
+}
+@media only screen and (max-width:224px){
+    
+    #cardtop a{
+        width: 24%;
     }
 }
